@@ -20,14 +20,14 @@ const TESTIMONIALS_DATA = [
       "On behalf of MultiSoft Corporation, we are honrored to provide a testimonial / review of working with Hemangi D.K. and her company(Akshaayu software services) for the past 1.5 years. In looking for a QA tester to do some part time review of some of our projects, we were fortunate to find Hemangi.After working together for a couple months of we recognized the value and attention to detail she brought to our team and brought her on full time QA. Her mission was simply -'make our developers cry', which I don't know if they have, however I do know their attention to higher quality output of work has improved as has our software. As an owner and developer of software for over 34 years, we have never had an individual so adept at Quality Assurance, User Approved Testing, Documentation, and Tracking work completed as Hemangi. We have several departments in our company with different areas of software architecture and UI. Hemangi has the uncanny ability to pickup and understand all aspects of quality software development and proper testing, whether it be from a scrum or agile level of development.If you are looking to work with a QA / Testing individual and / or team we can not highly recommend Hemangi more. I assure you you will not be disappointed with the quality of work.",
   },
   {
-    image: img2,
+    // image: img2,
     heading: 'Natalia Sanz',
     designation: 'Head of Technology',
     content:
       'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.',
   },
   {
-    image: img3,
+    // image: img3,
     heading: 'Ece Akman',
     designation: 'Senior Marketer',
     content:

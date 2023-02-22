@@ -81,13 +81,14 @@ const CustomerSupport = () => {
                 </a>
               </Text>
             </Box>
-            <Box as="form" sx={styles.form}>
+            <Box as="form" sx={styles.form} style={{width:"100%"}}>
               <Input
                 onChange={(e) => handleChange(e)}
                 name="name"
                 id="name"
                 placeholder="Name"
                 sx={styles.form.input}
+                style={{width:"50%",marginRight:'10px'}}
               />
               <Input
                 onChange={(e) => handleChange(e)}
@@ -95,6 +96,7 @@ const CustomerSupport = () => {
                 id="email"
                 placeholder="Email-id"
                 sx={styles.form.input}
+                style={{width:"50%",marginLeft:'10px'}}
               />
             </Box>
             <Input
@@ -103,6 +105,7 @@ const CustomerSupport = () => {
               id="subject"
               placeholder="Subject"
               sx={styles.form.input}
+              style={{width:"100%",marginBottom:"20px"}}
             />
             <Textarea
               onChange={(e) => handleChange(e)}
@@ -110,8 +113,10 @@ const CustomerSupport = () => {
               id="body "
               placeholder="Message"
               sx={styles.form.inputText}
+              style={{width:"100%",marginBottom:"20px",fontSize:"16px"}}
+
             />
-            <Button onClick={()=> handleSubmit()}>Submit</Button>
+            <Button onClick={()=> handleSubmit()} style={{marginBottom:"20px"}}>Submit</Button>
           </Box>
           <Box sx={styles.col}>
             <Image src={img1} alt="" />
@@ -208,7 +213,7 @@ const styles = {
       borderRadius: ["4px"],
       backgroundColor: "#fff",
       width: ['600px'],
-      height: ["245px", null, null, "55px", null, null, "265px"],
+      height: ["245px", null, null, "100px", null, null, "265px"],
       padding: ["0 15px", null, null, "0 25px"],
       fontSize: [1, null, null, 2],
       border: "none",

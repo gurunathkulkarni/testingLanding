@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 
+
 import Image from 'components/image';
 
 import img1 from 'assets/app/client1.png';
@@ -11,6 +12,7 @@ import img5 from 'assets/app/client5.png';
 import img6 from 'assets/app/client6.png';
 
 import bannerImg from 'assets/banner-image-1-1.png';
+import CarouselComponent from 'components/Carousel';
 
 const Banner = () => {
   return (
@@ -64,6 +66,7 @@ const Banner = () => {
             <Image src={bannerImg} alt="" />
           </Box>
         </Grid>
+        {/* <CarouselComponent /> */}
       </Container>
     </Box>
   );
