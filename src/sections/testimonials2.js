@@ -5,7 +5,7 @@ import Image from "components/image";
 
 import icon1 from "assets/app/client1.png";
 import icon2 from "assets/app/client3.png";
-import icon3 from "assets/app/performance.png";
+import icon3 from "assets/app/client5.png";
 import icon4 from "assets/app/api.png";
 
 const SERVICES_DATA = [
@@ -20,7 +20,7 @@ const SERVICES_DATA = [
     text: "For over a year I worked with Akshaayu software services on a very complicated big data project where the QA was our main system tester. In this position she worked close with our lead developer and managed our other testers. During the time we worked with Akshaayu software services, they not only came with solutions, but also with new ideas how to make our system, better, faster and more user friendly. If I would ever need a new UX or UI tester, Akshaayu software services would be the one I would hire instantly..",
   },
   {
-    // icon: icon3,
+    icon: icon3,
     title: "PATRICK ERIS (Founder)",
     text: "Akshaayu software services did an excellent job testing our Windows application. The turnaround was quick and all specs were followed to our satisfaction. Akshaayu software services even pointed out a few usability issues with one of our UI components!",
   },

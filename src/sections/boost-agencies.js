@@ -5,7 +5,7 @@ import { Link } from 'components/link';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
 
 import { FaAngleRight } from 'react-icons/fa';
-import image1 from 'assets/boost-1-1.png';
+import image1 from 'assets/app/whatwedeliver.jpg';
 
 const BoostAgencies = () => {
   const data = [
@@ -28,11 +28,11 @@ const BoostAgencies = () => {
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                  Boost your agencies by choosing Ninja Testers
-                </Heading>
-                <Text as="p">
                   What we deliver ....
-                </Text>
+                </Heading>
+                {/* <Text as="p">
+                  What we deliver ....
+                </Text> */}
               </Box>
               <Box as="ul" sx={styles.list}>
                 {data.map((item) => {
@@ -43,7 +43,10 @@ const BoostAgencies = () => {
                     </Text>
                   )
                 })}
-                <Text>For Automation</Text>
+                 <Heading as="h1">
+                 For Automation
+                </Heading>
+                {/* <Text sx={styles.heading}>For Automation</Text> */}
                 {data2.map((item) => {
                   return (
                     <Text as="li">
@@ -86,6 +89,12 @@ const styles = {
     height: ['385px', null, null, 'auto'],
     position: 'relative',
     top: [null, null, null, '-20px', '-45px', 'auto'],
+  },
+  heading: {
+    fontSize: [1, null, 2, null, '28px'],
+    color: 'text_secondary',
+    lineHeight: [2.56],
+    fontWeight: 'bold'
   },
   list: {
     margin: 0,

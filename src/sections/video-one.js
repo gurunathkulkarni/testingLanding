@@ -5,46 +5,45 @@ import { Link } from 'components/link';
 import { FaAngleRight, FaPlay } from 'react-icons/fa';
 import ModalVideo from 'react-modal-video';
 
-import videoImg from 'assets/video.png';
+import videoImg from 'assets/app/about.jpg';
 
 const VideoOne = () => {
-  const [videoOpen, setVideoOpen] = useState(false);
-  const handleClick = (e) => {
-    e.preventDefault();
-    setVideoOpen(true);
-  };
+  // const [videoOpen, setVideoOpen] = useState(false);
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   setVideoOpen(true);
+  // };
+  const data = 'At Akshaayu Software services, we are a startup focused on providing best software testing services with the highest levels of customer satisfaction. we will do everything we can to meet your expectations. With a variety of offerings to choose from, we’re sure you’ll be happy working with us. Look around our website and if you have any comments or questions, please feel free to contact us. We hope to see you again! Check back later for new updates to our website. There’s much more to come!'
   return (
-    <Box as="section" sx={styles.video}>
+    <Box as="section" sx={styles.video} id="aboutus">
       <Container>
         <Heading as="h3">
-          Leading companies trust us <br /> to develop software
+          About us
         </Heading>
         <Text as="p">
-          We believe it’s important for everyone to have access to software{' '}
-          <br />
-          especially when it comes to digital learning be navigate.
+          {data}
         </Text>
-        <Link path="/" sx={styles.link}>
+        {/* <Link path="/" sx={styles.link}>
           Explore Details <FaAngleRight />
-        </Link>
+        </Link> */}
         <Box sx={styles.videoBox}>
           <Image src={videoImg} alt="" />
-          <Link
+          {/* <Link
             path="/"
             aria-label="video btn"
             onClick={handleClick}
             sx={styles.videoBtn}
-          >
-            <FaPlay />
-          </Link>
+          > */}
+            {/* <FaPlay />
+          </Link> */}
         </Box>
       </Container>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="Cm3U-NgJb9I"
         onClose={() => setVideoOpen(false)}
-      />
+      /> */}
     </Box>
   );
 };

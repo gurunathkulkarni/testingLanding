@@ -32,7 +32,7 @@ const CustomerSupport = () => {
       setEmail(value)
     }
     if (name === 'subject') {
-      setEmail(value);
+      setSubject(value);
     }
     if (name === 'body') {
       setMessage(value);
@@ -47,9 +47,16 @@ const CustomerSupport = () => {
       subject: subject
   };
   
-  emailjs.send("service_urhee4d","template_7o7jwya", templateParams, 'qkx2tOLTiQe2zKLnz')
+  const templateCode = 'template_7o7jwya';
+  const serviceCode = 'service_urhee4d';
+  const publicCode = 'qkx2tOLTiQe2zKLnz';
+
+  emailjs.send(serviceCode,templateCode, templateParams, publicCode)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+       setName('');
+       setEmail('');
+       setMessage('');
     }, function(err) {
        console.log('FAILED...', err);
     });

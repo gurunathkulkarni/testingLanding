@@ -11,7 +11,8 @@ import img4 from 'assets/app/client4.png';
 import img5 from 'assets/app/client5.png';
 import img6 from 'assets/app/client6.png';
 
-import bannerImg from 'assets/banner-image-1-1.png';
+
+import bannerImg from 'assets/app/banner.jpg';
 import CarouselComponent from 'components/Carousel';
 
 const Banner = () => {
@@ -78,7 +79,7 @@ const styles = {
   banner: {
     pt: ['110px', null, null, null, '150px', '200px'],
     pb: ['50px', null, null, null, '60px', null, '0'],
-    backgroundColor: '#F6F8FB',
+    backgroundColor: '#fffff',
     overflow: 'hidden',
   },
   container: {
@@ -145,15 +146,18 @@ const styles = {
   },
   partner: {
     display: 'flex',
-    flexWrap: 'wrap',
+    // flexWrap: 'wrap',
     alignItems: 'center',
+    // width: '100px',
     mb: ['40px'],
     '> div + div': {
       ml: ['10px', null, null, '20px', null, '30px'],
     },
     img: {
-      display: 'flex',
-      width: '100px'
+        height: '50px',
+      // display: 'flex',
+      // width: '300px',
+      // height: '100px'
     },
     span: {
       fontSize: [1, null, null, null, 2],

@@ -31,7 +31,7 @@ const SERVICES_DATA = [
     icon: icon4,
     title: 'API Testing',
     text:
-      'API Testing from postman',
+      'API(application programming interfaces) testing involves testing middle layer between the presentation (UI) and the database layer to determine if they meet expectations for functionality, reliability, performance, and security. Different tools like Postman / REST-assured / Ready API / katalon platform and Jmeter are used for api automation testing.There are four different types of APIs commonly used in web services: public, partner, private and composite. Benifits of api testings are its fast ,language and GUI-independent.',
   },
 ];
 
