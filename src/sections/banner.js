@@ -141,7 +141,7 @@ const styles = {
       mixBlendMode: 'darken',
       position: 'relative',
       top: ['0', null, null, null, null, '-40px'],
-      maxWidth: ['100%', null, null, null, null, null, 'none'],
+      maxWidth: ['100%', null, null, null, null, null, '100%'],
     },
   },
   partner: {

@@ -37,7 +37,7 @@ const BoostAgencies = () => {
               <Box as="ul" sx={styles.list}>
                 {data.map((item) => {
                   return (
-                    <Text as="li">
+                    <Text as="li" style={{fontSize:'16px'}}>
                     <IoIosCheckmarkCircle />
                       {item}
                     </Text>
@@ -49,7 +49,7 @@ const BoostAgencies = () => {
                 {/* <Text sx={styles.heading}>For Automation</Text> */}
                 {data2.map((item) => {
                   return (
-                    <Text as="li">
+                    <Text as="li" style={{fontSize:'16px'}}>
                     <IoIosCheckmarkCircle />
                       {item}
                     </Text>
