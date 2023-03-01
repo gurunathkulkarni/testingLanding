@@ -14,7 +14,7 @@ import {
 import Image from "components/image";
 import emailjs from '@emailjs/browser';
 
-import img1 from "assets/cta-2-1.png";
+import img1 from "assets/ContactUs.jpeg";
 
 const CustomerSupport = () => {
   const [ name, setName ] = useState();
@@ -74,15 +74,15 @@ const CustomerSupport = () => {
               <Text as="p">
                 Mail us on Akshaayu.sup@gmail.com / hemangihere@gmail.com
               </Text>
-              <Text as="p" sx={styles.specialText}>
+              <Text as="p" sx={styles.specialText} style={{color:'#343D48',opacity:'1'}}>
                 Call us on +91-9880272369
               </Text>
-              <Text as="p" sx={styles.specialText}>
+              <Text as="p" sx={styles.specialText} style={{color:'#343D48',opacity:'1'}}>
                 <a href="https://www.linkedin.com/in/hemangikurapati/">
                   Connect us on linkedin
                 </a>
               </Text>
-              <Text as="p" sx={styles.specialText}>
+              <Text as="p" sx={styles.specialText} style={{color:'#343D48',opacity:'1'}}>
                 <a href="https://goo.gl/maps/FwvaLFbXxWGzZAAo7">
                   Google Reviews
                 </a>
@@ -156,7 +156,7 @@ const styles = {
     },
   },
   content: {
-    pt: [0, null, null, null, "160px", "210px"],
+    pt: [0, null, null, null, "160px", "10px"],
     mb: [null, null, null, "-40px", "0"],
     position: "relative",
     zIndex: 10,
