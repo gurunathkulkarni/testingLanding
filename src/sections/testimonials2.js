@@ -27,7 +27,7 @@ const SERVICES_DATA = [
   {
     // icon: icon4,
     title: " AMAN K. (SaaS Development, USA)",
-    text: "We have hired Akshaayu software services multiple times for full functional testing of significant features in our SaaS application. The work also involved defining and tabulating test cases through UI exploration as well as identifying the test conditions and assertions for each test.They have always exceeded our expectations in all our projects. We were impressed with both the quality and the timeliness. The testing was thorough and systematic. The delivered results included detailed repro-steps, screen-recordings, and issue filings. Most importantly, her work helped us catch and fix important issues before our production releases. Sincerely looking forward to working together again.",
+    text: "We have hired Akshaayu software services multiple times for full functional testing of significant features in our SaaS application. The work also involved defining and tabulating test cases through UI exploration as well as identifying the test conditions and assertions for each test.They have always exceeded our expectations in all our projects. We were impressed with both the quality and the timelines. The testing was thorough and systematic. The delivered results included detailed repro-steps, screen-recordings, and issue filings. Most importantly, her work helped us catch and fix important issues before our production releases. Sincerely looking forward to working together again.",
   },
 ];
 
@@ -39,6 +39,7 @@ const Testimonials2 = () => {
           // slogan="Testimonials"
           title="Testimonials"
           styles={styles.blockTitle}
+          
         />
         <Grid sx={styles.grid}>
           {SERVICES_DATA.map((service, index) => (
@@ -54,7 +55,7 @@ const Testimonials2 = () => {
               ) : null}
 
               <Heading as="h3">{service.title}</Heading>
-              <Text>{service.text}</Text>
+              <Text style={{textAlign:'justify'}}>{service.text}</Text>
             </Box>
           ))}
         </Grid>
@@ -67,7 +68,7 @@ export default Testimonials2;
 
 const styles = {
   services: {
-    pt: ["80px", null, null, null, null, null, "140px"],
+    pt: ["80px", null, null, null, null, null, "40px"],
     ".service-card:nth-of-type(2)": {
       ".service-icon": {
         // backgroundImage:
@@ -89,6 +90,8 @@ const styles = {
   },
   blockTitle: {
     textAlign: "center",
+    marginBottom:'unset !important',
+    color:'red'
   },
   grid: {
     display: "grid",

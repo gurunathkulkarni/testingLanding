@@ -13,7 +13,7 @@ const SERVICES_DATA = [
     icon: icon1,
     title: 'Manual Testing',
     text:
-      'Manual Testing is one of the most basc of testing processes.It requires lot of time and efforts but it helps to get confidence in your product, thats its working as expected and there are less bugs or no bugs in main work flows. Manual testing is very much important as "100% automation is not possible." It involves different testing techniques. like Exploratory testing , smoke testing, regression testing. Also creating testcases,test matrix to make sure no requirement is missed.',
+      'Manual Testing is one of the most basic of testing processes.It requires lot of time and efforts but it helps to get confidence in your product, thats its working as expected and there are less bugs or no bugs in main work flows. Manual testing is very much important as "100% automation is not possible." It involves different testing techniques. like Exploratory testing , smoke testing, regression testing. Also creating testcases,test matrix to make sure no requirement is missed.',
   },
   {
     icon: icon2,

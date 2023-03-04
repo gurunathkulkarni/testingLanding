@@ -57,6 +57,8 @@ const CustomerSupport = () => {
        setName('');
        setEmail('');
        setMessage('');
+       alert('Thank you for submitting your form. We will get back to you shortly!')
+       window.location.reload();
     }, function(err) {
        console.log('FAILED...', err);
     });
@@ -125,7 +127,7 @@ const CustomerSupport = () => {
             />
             <Button onClick={()=> handleSubmit()} style={{marginBottom:"20px"}}>Submit</Button>
           </Box>
-          <Box sx={styles.col}>
+          <Box sx={styles.col} style={{margin:'auto'}}>
             <Image src={img1} alt="" />
           </Box>
         </Grid>

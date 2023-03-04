@@ -41,8 +41,9 @@ const Banner = () => {
                 Subscribe
               </Button>
             </Box> */}
-            <Box sx={styles.partner}>
-              <Text as="span">Clients</Text>
+            
+              <Heading as="h6" style={{textAlign:'center'}}>Clients</Heading>
+              <Box sx={styles.partner}>
               <Box as="div">
                 <Image src={img1} alt=""/>
               </Box>
@@ -77,7 +78,7 @@ export default Banner;
 
 const styles = {
   banner: {
-    pt: ['110px', null, null, null, '150px', '200px'],
+    pt: ['120px', null, null, null, '150px', '200px'],
     pb: ['50px', null, null, null, '60px', null, '0'],
     backgroundColor: '#fffff',
     overflow: 'hidden',
