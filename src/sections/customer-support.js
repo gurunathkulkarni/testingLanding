@@ -40,16 +40,25 @@ const CustomerSupport = () => {
   }
 
  const handleSubmit = () => {
+  if (!email) {
+    alert('Please enter email id');
+  } else if (!name) {
+    alert('please enter name');
+  } else if (!message) {
+    alert('please enter message');
+  } else if (!subject) {
+    alert('please enter subject');
+  } else {
     var templateParams = {
       email: email,
-      from_name: name,
+      name: name,
       message: message,
       subject: subject
   };
   
-  const templateCode = 'template_7o7jwya';
-  const serviceCode = 'service_urhee4d';
-  const publicCode = 'qkx2tOLTiQe2zKLnz';
+  const templateCode = 'template_e3nkkpp';
+  const serviceCode = 'service_iu6oa3e';
+  const publicCode = 'user_MlcnaiO6MkenFZmZlr0Jw';
 
   emailjs.send(serviceCode,templateCode, templateParams, publicCode)
     .then(function(response) {
@@ -62,6 +71,7 @@ const CustomerSupport = () => {
     }, function(err) {
        console.log('FAILED...', err);
     });
+  }
   }
 
 
