@@ -72,12 +72,12 @@ const MobileDrawer = () => {
               </ScrollLink>
             ))}
           </Box>
-
+{/* 
           <Box sx={styles.menuFooter}>
             <Button variant="primary" sx={styles.button}>
               Register Now
             </Button>
-          </Box>
+          </Box> */}
         </Box>
       </Scrollbars>
     </Drawer>

@@ -4,6 +4,10 @@ export default [
     label: 'Home',
   },
   {
+    path: 'aboutus',
+    label: 'About us',
+  },
+  {
     path: 'services',
     label: 'Services',
   },

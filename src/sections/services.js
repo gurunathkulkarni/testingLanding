@@ -13,7 +13,7 @@ const SERVICES_DATA = [
     icon: icon1,
     title: 'Manual Testing',
     text:
-      'Manual Testing is one of the most basc of testing processes.It requires lot of time and efforts but it helps to get confidence in your product, thats its working as expected and there are less bugs or no bugs in main work flows. Manual testing is very much important as "100% automation is not possible." It involves different testing techniques. like Exploratory testing , smoke testing, regression testing. Also creating testcases,test matrix to make sure no requirement is missed.',
+      'Manual Testing is one of the most basic of testing processes.It requires lot of time and efforts but it helps to get confidence in your product, thats its working as expected and there are less bugs or no bugs in main work flows. Manual testing is very much important as "100% automation is not possible." It involves different testing techniques. like Exploratory testing , smoke testing, regression testing. Also creating testcases,test matrix to make sure no requirement is missed.',
   },
   {
     icon: icon2,
@@ -31,7 +31,7 @@ const SERVICES_DATA = [
     icon: icon4,
     title: 'API Testing',
     text:
-      'API Testing from postman',
+      'API(application programming interfaces) testing involves testing middle layer between the presentation (UI) and the database layer to determine if they meet expectations for functionality, reliability, performance, and security. Different tools like Postman / REST-assured / Ready API / katalon platform and Jmeter are used for api automation testing.There are four different types of APIs commonly used in web services: public, partner, private and composite. Benifits of api testings are its fast ,language and GUI-independent.',
   },
 ];
 
@@ -40,7 +40,7 @@ const Services = () => {
     <Box sx={styles.services} id="services">
       <Container>
         <BlockTitle
-          slogan="Services"
+          
           title="Quality Services provided"
           styles={styles.blockTitle}
         />

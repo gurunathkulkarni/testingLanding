@@ -14,7 +14,7 @@ import {
 import Image from "components/image";
 import emailjs from '@emailjs/browser';
 
-import img1 from "assets/cta-2-1.png";
+import img1 from "assets/ContactUs.jpeg";
 
 const CustomerSupport = () => {
   const [ name, setName ] = useState();
@@ -32,7 +32,7 @@ const CustomerSupport = () => {
       setEmail(value)
     }
     if (name === 'subject') {
-      setEmail(value);
+      setSubject(value);
     }
     if (name === 'body') {
       setMessage(value);
@@ -40,19 +40,38 @@ const CustomerSupport = () => {
   }
 
  const handleSubmit = () => {
+  if (!email) {
+    alert('Please enter email id');
+  } else if (!name) {
+    alert('please enter name');
+  } else if (!message) {
+    alert('please enter message');
+  } else if (!subject) {
+    alert('please enter subject');
+  } else {
     var templateParams = {
       email: email,
-      from_name: name,
+      name: name,
       message: message,
       subject: subject
   };
   
-  emailjs.send("service_urhee4d","template_7o7jwya", templateParams, 'qkx2tOLTiQe2zKLnz')
+  const templateCode = 'template_e3nkkpp';
+  const serviceCode = 'service_iu6oa3e';
+  const publicCode = 'user_MlcnaiO6MkenFZmZlr0Jw';
+
+  emailjs.send(serviceCode,templateCode, templateParams, publicCode)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+       setName('');
+       setEmail('');
+       setMessage('');
+       alert('Thank you for submitting your form. We will get back to you shortly!')
+       window.location.reload();
     }, function(err) {
        console.log('FAILED...', err);
     });
+  }
   }
 
 
@@ -67,27 +86,28 @@ const CustomerSupport = () => {
               <Text as="p">
                 Mail us on Akshaayu.sup@gmail.com / hemangihere@gmail.com
               </Text>
-              <Text as="p" sx={styles.specialText}>
+              <Text as="p" sx={styles.specialText} style={{color:'#343D48',opacity:'1'}}>
                 Call us on +91-9880272369
               </Text>
-              <Text as="p" sx={styles.specialText}>
+              <Text as="p" sx={styles.specialText} style={{color:'#343D48',opacity:'1'}}>
                 <a href="https://www.linkedin.com/in/hemangikurapati/">
                   Connect us on linkedin
                 </a>
               </Text>
-              <Text as="p" sx={styles.specialText}>
+              <Text as="p" sx={styles.specialText} style={{color:'#343D48',opacity:'1'}}>
                 <a href="https://goo.gl/maps/FwvaLFbXxWGzZAAo7">
                   Google Reviews
                 </a>
               </Text>
             </Box>
-            <Box as="form" sx={styles.form}>
+            <Box as="form" sx={styles.form} style={{width:"100%"}}>
               <Input
                 onChange={(e) => handleChange(e)}
                 name="name"
                 id="name"
                 placeholder="Name"
                 sx={styles.form.input}
+                style={{width:"50%",marginRight:'10px'}}
               />
               <Input
                 onChange={(e) => handleChange(e)}
@@ -95,6 +115,7 @@ const CustomerSupport = () => {
                 id="email"
                 placeholder="Email-id"
                 sx={styles.form.input}
+                style={{width:"50%",marginLeft:'10px'}}
               />
             </Box>
             <Input
@@ -103,6 +124,7 @@ const CustomerSupport = () => {
               id="subject"
               placeholder="Subject"
               sx={styles.form.input}
+              style={{width:"100%",marginBottom:"20px"}}
             />
             <Textarea
               onChange={(e) => handleChange(e)}
@@ -110,10 +132,12 @@ const CustomerSupport = () => {
               id="body "
               placeholder="Message"
               sx={styles.form.inputText}
+              style={{width:"100%",marginBottom:"20px",fontSize:"16px"}}
+
             />
-            <Button onClick={()=> handleSubmit()}>Submit</Button>
+            <Button onClick={()=> handleSubmit()} style={{marginBottom:"20px"}}>Submit</Button>
           </Box>
-          <Box sx={styles.col}>
+          <Box sx={styles.col} style={{margin:'auto'}}>
             <Image src={img1} alt="" />
           </Box>
         </Grid>
@@ -144,7 +168,7 @@ const styles = {
     },
   },
   content: {
-    pt: [0, null, null, null, "160px", "210px"],
+    pt: [0, null, null, null, "160px", "10px"],
     mb: [null, null, null, "-40px", "0"],
     position: "relative",
     zIndex: 10,
@@ -208,7 +232,7 @@ const styles = {
       borderRadius: ["4px"],
       backgroundColor: "#fff",
       width: ['600px'],
-      height: ["245px", null, null, "55px", null, null, "265px"],
+      height: ["245px", null, null, "100px", null, null, "265px"],
       padding: ["0 15px", null, null, "0 25px"],
       fontSize: [1, null, null, 2],
       border: "none",

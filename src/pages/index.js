@@ -22,10 +22,11 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Akshaayu Software Services" />
           <Banner />
+          <VideoOne />
           <Services />
           <BoostAgencies />
           <Testimonials2 />
-          {/* <VideoOne /> */}
+         
           {/* <Testimonials /> */}
           <CustomerSupport />
           {/* <Feature /> */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
 
+
 import Image from 'components/image';
 
 import img1 from 'assets/app/client1.png';
@@ -10,7 +11,9 @@ import img4 from 'assets/app/client4.png';
 import img5 from 'assets/app/client5.png';
 import img6 from 'assets/app/client6.png';
 
-import bannerImg from 'assets/banner-image-1-1.png';
+
+import bannerImg from 'assets/app/banner.jpg';
+import CarouselComponent from 'components/Carousel';
 
 const Banner = () => {
   return (
@@ -38,8 +41,9 @@ const Banner = () => {
                 Subscribe
               </Button>
             </Box> */}
-            <Box sx={styles.partner}>
-              <Text as="span">Clients</Text>
+            
+              <Heading as="h6" style={{textAlign:'center'}}>Clients</Heading>
+              <Box sx={styles.partner}>
               <Box as="div">
                 <Image src={img1} alt=""/>
               </Box>
@@ -64,6 +68,7 @@ const Banner = () => {
             <Image src={bannerImg} alt="" />
           </Box>
         </Grid>
+        {/* <CarouselComponent /> */}
       </Container>
     </Box>
   );
@@ -73,9 +78,9 @@ export default Banner;
 
 const styles = {
   banner: {
-    pt: ['110px', null, null, null, '150px', '200px'],
+    pt: ['120px', null, null, null, '150px', '200px'],
     pb: ['50px', null, null, null, '60px', null, '0'],
-    backgroundColor: '#F6F8FB',
+    backgroundColor: '#fffff',
     overflow: 'hidden',
   },
   container: {
@@ -137,20 +142,23 @@ const styles = {
       mixBlendMode: 'darken',
       position: 'relative',
       top: ['0', null, null, null, null, '-40px'],
-      maxWidth: ['100%', null, null, null, null, null, 'none'],
+      maxWidth: ['100%', null, null, null, null, null, '100%'],
     },
   },
   partner: {
     display: 'flex',
-    flexWrap: 'wrap',
+    // flexWrap: 'wrap',
     alignItems: 'center',
+    // width: '100px',
     mb: ['40px'],
     '> div + div': {
       ml: ['10px', null, null, '20px', null, '30px'],
     },
     img: {
-      display: 'flex',
-      width: '100px'
+        height: '50px',
+      // display: 'flex',
+      // width: '300px',
+      // height: '100px'
     },
     span: {
       fontSize: [1, null, null, null, 2],
